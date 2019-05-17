@@ -1,0 +1,13 @@
+{
+  "generator-craft-banner": {
+    "nameSpace": "MU",
+    "publisher": "doubleclick",
+    "bannerName": "Toney_Dell_StickyNotes",
+    "width": "300",
+    "height": "250",
+    "size": "150",
+    "includeFallbackIE": true,
+    "fallbackIEVersion": 9,
+    "doubleclickPlatform": "campaignManager"
+  }
+}

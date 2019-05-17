@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "vue-fs-lead-gen",
+    "default": "vue-fs-lead-gen"
+  }
+}

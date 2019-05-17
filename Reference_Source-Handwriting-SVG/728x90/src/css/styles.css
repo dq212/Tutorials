@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+*, :before, :after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.abs-pos, #wrapper, #inkingHolder, #bg, #inkingHolder2, #click_through, #f1_BGImage, #f2_BGImage, #f3_BGImage, #f4_BGImage, #f5_BGImage, #logo01, #logo02, #logo03, #f2_copy, #f4_copy1, #f4_copy2, #f5_copy1, #f5_copy2, #f5_copy3, #f6_copy1, #f6_copy2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 728px;
+  height: 90px;
+  overflow: hidden; }
+
+#wrapper {
+  position: relative;
+  visibility: hidden; }
+  #wrapper.show {
+    visibility: visible; }
+
+#inkingHolder {
+  left: 104px;
+  top: 42px; }
+
+#bg {
+  background-color: #f8e8d8; }
+
+#inkingHolder2 {
+  left: 187px;
+  top: 47px; }
+
+#click_through {
+  z-index: 999;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000000; }
+
+#f1_BGImage {
+  width: 728px;
+  height: 90px;
+  background: url(../img/bg1.jpg); }
+
+#f2_BGImage {
+  background: url(../img/bg2.jpg); }
+
+#f3_BGImage {
+  background: url(../img/bg3.jpg); }
+
+#f4_BGImage {
+  background: url(../img/bg4.jpg); }
+
+#f5_BGImage {
+  background: url(../img/bg5.jpg); }
+
+#logo01 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -746px; }
+
+#logo02 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -836px; }
+
+#logo03 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -926px; }
+
+#f2_copy {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 0; }
+
+#f4_copy1 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -90px; }
+
+#f4_copy2 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -180px; }
+
+#f5_copy1 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -270px; }
+
+#f5_copy2 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -360px; }
+
+#f5_copy3 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -450px; }
+
+#f6_copy1 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -540px; }
+
+#f6_copy2 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -630px; }
+
+#cta_copy_image1, #cta_copy_image2 {
+  background: url('../img/sprites-s7e8f3eca64.png') 0 -720px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 73px;
+  height: 26px;
+  padding: 0;
+  margin: 0; }
+
+#cta {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 73px;
+  height: 26px;
+  top: 34px;
+  right: 20px;
+  background-color: #fff;
+  overflow: hidden; }
+
+#cta_copy {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0; }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./delete-firestore-collections.js">
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBbeyShrorNbqE27rZfTjnJV5u_44j6FtU",
+    authDomain: "vue-fs-lead-gen.firebaseapp.com",
+    databaseURL: "https://vue-fs-lead-gen.firebaseio.com",
+    projectId: "vue-fs-lead-gen",
+    storageBucket: "vue-fs-lead-gen.appspot.com",
+    messagingSenderId: "676240232669"
+  };
+  firebase.initializeApp(config);
+</script>
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="killAllDBs()">DELETE ALL</button>
+</body>
+
+<script>
+  /**
+ * Call the 'recursiveDelete' callable function with a path to initiate
+ * a server-side delete.
+ */
+function deleteAtPath(path) {
+  var deleteFn = firebase.functions().httpsCallable('recursiveDelete');
+  deleteFn({ path: path })
+      .then(function(result) {
+          logMessage('Delete success: ' + JSON.stringify(result));
+      })
+      .catch(function(err) {
+          logMessage('Delete failed, see console,');
+          console.warn(err);
+      });
+}
+
+</script>
+</html>

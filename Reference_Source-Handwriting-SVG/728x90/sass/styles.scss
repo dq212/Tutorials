@@ -1,0 +1,175 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transform";
+@import "compass/utilities/sprites";
+
+// set up variables
+$width: 728px;
+$height: 90px;
+
+// Uncomment to include sprites in your banner
+ $sprites: sprite-map("sprites/*.png");
+
+// to use sprites, place the image in the sprites folder and set the background for the desired element as follows:
+// .element { background: sprite($sprites, image-name); }
+
+// set all elements to be box-sizing: border box to include any border, padding and content, but not margin.
+*, :before, :after {
+	@include box-sizing(border-box);
+}
+
+// 100% width and height elements that can be positioned easily absolutely
+.abs-pos {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: $width;
+	height: $height; 
+	overflow: hidden;
+}
+
+#wrapper {
+	@extend .abs-pos;
+	position: relative;	
+	visibility: hidden; 
+
+	&.show {
+		visibility: visible;
+	}
+}
+
+#inkingHolder {
+	@extend .abs-pos;
+	left:104px;
+	top:42px;
+}
+
+#bg {
+	@extend .abs-pos;
+	background-color:#f8e8d8;
+}
+
+#inkingHolder2 {
+	@extend .abs-pos;
+	left:187px;
+	top:47px;
+}
+
+#click_through {
+	@extend .abs-pos;
+	z-index: 999;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0);
+	border: 1px solid #000000;
+}
+
+#f1_BGImage {
+	@extend .abs-pos;
+	width:$width;
+	height:$height;
+	background: url(../img/bg1.jpg);
+}
+#f2_BGImage {
+	@extend .abs-pos;
+	background: url(../img/bg2.jpg);
+}
+#f3_BGImage {
+	@extend .abs-pos;
+	background: url(../img/bg3.jpg);
+}
+#f4_BGImage {
+	@extend .abs-pos;
+	background: url(../img/bg4.jpg);
+}
+
+#f5_BGImage {
+	@extend .abs-pos;
+	background: url(../img/bg5.jpg);
+}
+
+#logo01 {
+	@extend .abs-pos;
+	background: sprite($sprites, logo_01);
+}
+
+
+#logo02 {
+	@extend .abs-pos;
+	background: sprite($sprites, logo_02);
+}
+
+#logo03 {
+	@extend .abs-pos;
+	background: sprite($sprites, logo_03);
+}
+
+
+#f2_copy {
+	@extend .abs-pos;
+	background: sprite($sprites, f2_copy); 	
+}
+
+
+#f4_copy1 {
+	@extend .abs-pos;
+	background: sprite($sprites, f4_copy1); 
+}
+#f4_copy2 {
+	@extend .abs-pos;
+	background: sprite($sprites, f4_copy2); 
+}
+
+
+#f5_copy1 {
+	@extend .abs-pos;
+	background: sprite($sprites, f5_copy1); 
+}
+#f5_copy2 {
+	@extend .abs-pos;
+	background: sprite($sprites, f5_copy2); 
+}
+#f5_copy3 {
+	@extend .abs-pos;
+	background: sprite($sprites, f5_copy3); 
+}
+
+#f6_copy1 {
+	@extend .abs-pos;
+	background: sprite($sprites, f6_copy1); 
+}
+#f6_copy2 {
+	@extend .abs-pos;
+	background: sprite($sprites, f6_copy2); 
+}
+
+
+#cta_copy_image1 , #cta_copy_image2{
+	background: sprite($sprites, learnMore); 
+	position:relative;
+ 	top:0;
+ 	left:0;
+ 	width:67px;
+ 	height:24px;
+ 	padding:0;
+	margin:0;
+}
+
+#cta {
+	position: absolute;
+	padding:0;
+	margin:0;
+	  width: 67px;
+	  height: 24px;
+	  top:34px;
+	  right:20px;
+	  background-color: #fff;  
+	  overflow:hidden;  
+}	
+
+#cta_copy{
+	position:relative;
+ 	top:0;
+ 	left:0;
+ 	padding:0;
+	margin:0;
+}
